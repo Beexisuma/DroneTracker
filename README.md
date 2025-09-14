@@ -15,7 +15,6 @@ It was trained on the [Drone Detection Dataset](https://universe.roboflow.com/yo
 - Easily extendable to other datasets & models
 
 ---
-
 ## 📊 Model Performance
 | Metric            | Score |
 |-------------------|-------|
@@ -26,4 +25,14 @@ It was trained on the [Drone Detection Dataset](https://universe.roboflow.com/yo
 
 ---
 
+## ⚖️ Notes on Performance
+The model demonstrates strong **precision (96%)** but moderate **recall (52%)**, which reflects its ability to detect drones reliably when visible but with some drop-off during partial occlusion (e.g., smoke, fast movement).
+
+Training was performed on a **single NVIDIA RTX 4070 Super** in a home workstation environment.  
+Due to compute constraints:
+- Training used the **YOLOv11m (medium) model** rather than the larger **YOLOv11x**.  
+- Image size was capped at **512 px**.  
+- Training ran for **200 epochs**.  
+
+With access to higher-end GPUs (e.g., 4090/5090), the dataset could support **larger models, higher resolution, and longer training**, likely yielding significant improvements in recall and mAP.
 
