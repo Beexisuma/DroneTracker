@@ -28,7 +28,6 @@ It was trained on the [Drone Detection Dataset](https://universe.roboflow.com/yo
 ## ⚖️ Notes on Performance
 The model demonstrates strong **precision (96%)** but moderate **recall (52%)**, which reflects its ability to detect drones reliably when visible but with some drop-off during partial occlusion (e.g., smoke, fast movement).
 
-Training was performed on a **single NVIDIA RTX 4070 Super** in a home workstation environment.  
 Due to compute constraints:
 - Training used the **YOLOv11m (medium) model** rather than the larger **YOLOv11x**.  
 - Image size was capped at **512 px**.  
